@@ -1,0 +1,9 @@
+apply plugin: 'java-library'
+
+ext.moduleName = 'tech.adriano.cleanarchitecture.usecase'
+
+dependencies {
+    implementation(
+            project(':domain')
+    )
+}

@@ -1,0 +1,16 @@
+allprojects {
+    group = 'tech.adriano.clean-architecture-service'
+
+    repositories {
+        jcenter()
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    sourceCompatibility = 1.11
+    targetCompatibility = 1.11
+
+    version = '1.0'
+}
