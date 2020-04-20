@@ -1,4 +1,4 @@
 module adriano.cleanarchitecture.domain {
-	exports tech.adriano.cleanarchitecture.domain.model;
-    exports tech.adriano.cleanarchitecture.domain.model.primitive;
+	exports tech.adriano.cleanarchitecture.domain.model to adriano.cleanarchitecture.usecase;
+    exports tech.adriano.cleanarchitecture.domain.model.primitive to adriano.cleanarchitecture.usecase;
 }
