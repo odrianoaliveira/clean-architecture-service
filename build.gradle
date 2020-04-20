@@ -1,3 +1,7 @@
+plugins {
+    id 'org.javamodularity.moduleplugin' version '1.6.0' apply false
+}
+
 allprojects {
     group = 'tech.adriano.clean-architecture-service'
 
@@ -9,6 +13,7 @@ allprojects {
 
 subprojects {
     apply plugin: 'java'
+    apply plugin: "org.javamodularity.moduleplugin"
 
     sourceCompatibility = 1.11
     targetCompatibility = 1.11
@@ -20,7 +25,15 @@ subprojects {
     }
 
     dependencies {
+        // Junit 5
         testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.2")
         testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.6.2")
+
+        // Mockito
+        testCompile "org.mockito:mockito-core:2.+"
+        testCompile "org.mockito:mockito-junit-jupiter:2.+"
+
+        // AssertJ
+        testImplementation("org.assertj:assertj-core:3.15.0")
     }
 }
