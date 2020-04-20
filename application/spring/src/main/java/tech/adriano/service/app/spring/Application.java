@@ -1,4 +1,4 @@
-package tech.adriano.cleanarchitecture.app.spring;
+package tech.adriano.service.app.spring;
 
 public class Application {
 	

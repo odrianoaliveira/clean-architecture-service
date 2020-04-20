@@ -1,4 +1,4 @@
-package tech.adriano.cleanarchitecture.domain.model.primitive;
+package tech.adriano.service.domain.model.primitive;
 
 import java.util.UUID;
 

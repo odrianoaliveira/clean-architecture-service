@@ -1,5 +1,6 @@
-module adriano.cleanarchitecture.usecase {
-	requires adriano.cleanarchitecture.domain;
+module adriano.service.usecase {
+	exports tech.adriano.service.usecase;
+	exports tech.adriano.service.usecase.port;
 	
-	exports tech.adriano.cleanarchitecture.usecase;
+	requires adriano.service.domain;
 }

@@ -1,4 +1,4 @@
-package tech.adriano.cleanarchitecture.domain.model.primitive;
+package tech.adriano.service.domain.model.primitive;
 
 public final class Name {
     private final String first;

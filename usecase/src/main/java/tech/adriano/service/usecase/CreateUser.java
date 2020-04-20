@@ -1,8 +1,8 @@
-package tech.adriano.cleanarchitecture.usecase;
+package tech.adriano.service.usecase;
 
-import tech.adriano.cleanarchitecture.domain.model.User;
-import tech.adriano.cleanarchitecture.usecase.exception.UserAlreadyExistsException;
-import tech.adriano.cleanarchitecture.usecase.port.UserRepository;
+import tech.adriano.service.domain.model.User;
+import tech.adriano.service.usecase.exception.UserAlreadyExistsException;
+import tech.adriano.service.usecase.port.UserRepository;
 
 public class CreateUser {
     private final UserRepository userRepository;

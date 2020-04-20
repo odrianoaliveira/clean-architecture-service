@@ -2,6 +2,10 @@ rootProject.name = 'clean-architecture-service'
 
 include ':domain'
 include ':usecase'
-include ':application'
-include ':adapter'
+include ':repository'
+include ':spring-application'
+include ':micronaut-application'
 
+project(":repository").projectDir = file("adapter/repository")
+project(":spring-application").projectDir = file("application/spring")
+project(":micronaut-application").projectDir = file("adapter/micronaut")

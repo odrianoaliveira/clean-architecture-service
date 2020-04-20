@@ -1,6 +1,6 @@
-package tech.adriano.cleanarchitecture.usecase.exception;
+package tech.adriano.service.usecase.exception;
 
-import tech.adriano.cleanarchitecture.domain.model.primitive.Email;
+import tech.adriano.service.domain.model.primitive.Email;
 
 public class UserAlreadyExistsException extends RuntimeException {
     public UserAlreadyExistsException(Email email) {

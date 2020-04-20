@@ -1,12 +1,7 @@
-package tech.adriano.cleanarchitecture.repository;
+package tech.adriano.service.repository;
 
-import tech.adriano.cleanarchitecture.domain.model.User;
-import tech.adriano.cleanarchitecture.domain.model.primitive.Email;
-import tech.adriano.cleanarchitecture.domain.model.primitive.Id;
-import tech.adriano.cleanarchitecture.usecase.port.UserRepository;
 
 import java.util.Collections;
-import java.util.List;
 import java.util.Optional;
 
 public class UserUserRepositoryImpl implements UserRepository {

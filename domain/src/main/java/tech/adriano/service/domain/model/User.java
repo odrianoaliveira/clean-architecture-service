@@ -1,12 +1,12 @@
-package tech.adriano.cleanarchitecture.domain.model;
+package tech.adriano.service.domain.model;
 
 import java.util.StringJoiner;
 
-import tech.adriano.cleanarchitecture.domain.model.primitive.Credential;
-import tech.adriano.cleanarchitecture.domain.model.primitive.Email;
-import tech.adriano.cleanarchitecture.domain.model.primitive.Entity;
-import tech.adriano.cleanarchitecture.domain.model.primitive.Id;
-import tech.adriano.cleanarchitecture.domain.model.primitive.Name;
+import tech.adriano.service.domain.model.primitive.Credential;
+import tech.adriano.service.domain.model.primitive.Email;
+import tech.adriano.service.domain.model.primitive.Entity;
+import tech.adriano.service.domain.model.primitive.Id;
+import tech.adriano.service.domain.model.primitive.Name;
 
 public class User extends Entity {
 	

@@ -1,3 +1,10 @@
 apply plugin: 'java-library'
 
-ext.moduleName = 'tech.example.config'
+ext.moduleName = 'adriano.service.adapter.repository'
+
+dependencies {
+    implementation(
+            project(':domain'),
+            project(':usecase')
+    )
+}

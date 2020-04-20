@@ -1,10 +1,9 @@
 apply plugin: 'java-library'
 
-ext.moduleName = 'adriano.cleanarchitecture.main'
+ext.moduleName = 'adriano.service.application.spring'
 
 dependencies {
     implementation(
-            project(':config'),
             project(':domain'),
             project(':usecase')
     )
