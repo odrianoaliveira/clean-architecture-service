@@ -1,5 +1,5 @@
-module tech.adriano.cleanarchitecture.usecase {
+module adriano.cleanarchitecture.usecase {
+	requires adriano.cleanarchitecture.domain;
+	
 	exports tech.adriano.cleanarchitecture.usecase;
-
-	requires tech.adriano.cleanarchitecture.domain;
 }
