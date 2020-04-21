@@ -23,9 +23,11 @@ public class User extends Entity {
 		this.name = name;
 	}
 	
+	
 	public static UserBuilder builder() {
 		return new UserBuilder();
 	}
+	
 	
 	public Name getName() {
 		return name;
@@ -75,9 +77,16 @@ public class User extends Entity {
 	
 	public static class UserBuilder {
 		
+		private Id id;
 		private Name name;
 		private Email email;
 		private Credential credential;
+		
+		
+		public UserBuilder id(Id id) {
+			this.id = id;
+			return this;
+		}
 		
 		
 		public UserBuilder email(Email email) {
@@ -99,7 +108,7 @@ public class User extends Entity {
 		
 		
 		public User build() {
-			return new User(Id.generate(), name, email, credential);
+			return new User(id, name, email, credential);
 		}
 		
 		
