@@ -2,10 +2,15 @@ rootProject.name = 'adriano-clean-service'
 
 include ':domain'
 include ':usecase'
-include ':repository'
-include ':spring-application'
-include ':micronaut-application'
 
-project(":repository").projectDir = file("adapter/repository")
-project(":spring-application").projectDir = file("application/spring")
-project(":micronaut-application").projectDir = file("adapter/micronaut")
+include ':repository-spring'
+project(":repository-spring").projectDir = file("adapter/repository/spring")
+
+include ':repository-micronaut'
+project(":repository-micronaut").projectDir = file("adapter/repository/micronaut")
+
+include ':application-spring'
+project(":application-spring").projectDir = file("application/spring")
+
+include ':application-micronaut'
+project(":application-micronaut").projectDir = file("adapter/micronaut")

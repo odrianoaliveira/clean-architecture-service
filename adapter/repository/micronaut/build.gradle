@@ -1,0 +1,18 @@
+plugins {
+    id 'java-library'
+}
+
+jar {
+    enabled = true
+}
+
+dependencies {
+    implementation(
+            project(':domain'),
+            project(':usecase')
+    )
+
+    // embedded mongodb for testing
+    testImplementation group: 'de.flapdoodle.embed', name: 'de.flapdoodle.embed.mongo', version: '1.35'
+
+}

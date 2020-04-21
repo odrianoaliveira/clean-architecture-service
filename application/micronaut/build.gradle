@@ -1,9 +1,15 @@
-apply plugin: 'java-library'
+plugins {
+    id 'java-library'
+}
+
+jar {
+    enabled = true
+}
 
 dependencies {
     implementation(
             project(':domain'),
             project(':usecase'),
-            project(':repository-spring')
+            project(':repository-micronaut'),
     )
 }
