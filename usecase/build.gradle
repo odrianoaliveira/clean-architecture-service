@@ -1,7 +1,5 @@
 apply plugin: 'java-library'
 
-ext.moduleName = 'adriano.service.usecase'
-
 dependencies {
     implementation(
             project(':domain')

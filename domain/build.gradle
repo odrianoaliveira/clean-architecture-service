@@ -1,3 +1,1 @@
 apply plugin: 'java-library'
-
-ext.moduleName = 'adriano.service.domain'

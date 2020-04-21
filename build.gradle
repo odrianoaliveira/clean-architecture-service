@@ -1,19 +1,13 @@
-plugins {
-    id 'org.javamodularity.moduleplugin' version '1.6.0' apply false
-}
-
 allprojects {
-    group = 'tech.adriano.clean-architecture-service'
+    group = 'tech.adriano.clean.service'
 
     repositories {
         jcenter()
     }
 }
 
-
 subprojects {
     apply plugin: 'java'
-    apply plugin: "org.javamodularity.moduleplugin"
 
     sourceCompatibility = 1.11
     targetCompatibility = 1.11
