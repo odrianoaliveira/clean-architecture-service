@@ -20,12 +20,12 @@ subprojects {
 
     dependencies {
         // Junit 5
-        testImplementation("org.junit.jupiter:junit-jupiter-api:5.+")
-        testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.+")
+        testImplementation "org.junit.jupiter:junit-jupiter-api:5.+"
+        testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.+"
 
         // Mockito
-        testCompile "org.mockito:mockito-core:3.+"
-        testCompile "org.mockito:mockito-junit-jupiter:3.+"
+        testImplementation "org.mockito:mockito-core:3.+"
+        testImplementation "org.mockito:mockito-junit-jupiter:3.+"
 
         // AssertJ
         testImplementation("org.assertj:assertj-core:3.+")
